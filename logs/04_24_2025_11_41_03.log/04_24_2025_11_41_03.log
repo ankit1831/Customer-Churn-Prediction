@@ -1,0 +1,11 @@
+[ 2025-04-24 11:41:03,843 ] 97 werkzeug - WARNING -  * Debugger is active!
+[ 2025-04-24 11:41:03,849 ] 97 werkzeug - INFO -  * Debugger PIN: 137-896-629
+[ 2025-04-24 11:41:06,033 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 11:41:06] "GET / HTTP/1.1" 200 -
+[ 2025-04-24 11:41:06,448 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 11:41:06] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+[ 2025-04-24 11:41:25,273 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 11:41:25] "[35m[1mPOST / HTTP/1.1[0m" 500 -
+[ 2025-04-24 11:41:25,421 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 11:41:25] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[ 2025-04-24 11:41:25,444 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 11:41:25] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[ 2025-04-24 11:41:25,498 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 11:41:25] "GET /?__debugger__=yes&cmd=resource&f=console.png&s=tY0kxBF813xBaOL6JI88 HTTP/1.1" 200 -
+[ 2025-04-24 11:41:25,571 ] 97 werkzeug - INFO - 127.0.0.1 - - [24/Apr/2025 11:41:25] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[ 2025-04-24 11:42:47,787 ] 97 werkzeug - INFO -  * Detected change in 'D:\\vit study\\self preparation\\machine learning\\Customer Churn Prediction\\app.py', reloading
+[ 2025-04-24 11:42:47,791 ] 97 werkzeug - INFO -  * Detected change in 'D:\\vit study\\self preparation\\machine learning\\Customer Churn Prediction\\app.py', reloading

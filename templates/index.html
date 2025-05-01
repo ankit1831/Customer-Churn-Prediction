@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Churn Prediction</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f6f8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px 0;
+        }
+
+        .container {
+            background: white;
+            padding: 30px 40px;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+            margin-top: 0;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #444;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            border-radius: 6px;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .result {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            color: #222;
+            font-weight: bold;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Predict Customer Churn</h1>
+        <form method="post">
+            <div class="form-group">
+                <label for="credit-score">Credit Score:</label>
+                <input type="number" id="credit-score" name="CreditScore" required>
+            </div>
+
+            <div class="form-group">
+                <label for="geography">Geography:</label>
+                <select id="geography" name="Geography">
+                    <option value="France">France</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Spain">Spain</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="Gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="Age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="tenure">Tenure:</label>
+                <input type="number" id="tenure" name="Tenure" required>
+            </div>
+
+            <div class="form-group">
+                <label for="balance">Balance:</label>
+                <input type="number" id="balance" step="0.01" name="Balance" required>
+            </div>
+
+            <div class="form-group">
+                <label for="products">Num Of Products:</label>
+                <input type="number" id="products" name="NumOfProducts" required>
+            </div>
+
+            <div class="form-group">
+                <label for="credit-card">Has Credit Card (1 or 0):</label>
+                <input type="number" id="credit-card" min="0" max="1" name="HasCrCard" required>
+            </div>
+
+            <div class="form-group">
+                <label for="active-member">Is Active Member (1 or 0):</label>
+                <input type="number" id="active-member" min="0" max="1" name="IsActiveMember" required>
+            </div>
+
+            <div class="form-group">
+                <label for="salary">Estimated Salary:</label>
+                <input type="number" id="salary" step="0.01" name="EstimatedSalary" required>
+            </div>
+
+            <input type="submit" value="Predict">
+        </form>
+
+        {% if prediction is defined %}
+        <div class="result">
+            Prediction: {{ prediction }}
+        </div>
+        {% endif %}
+    </div>
+</body>
+</html>

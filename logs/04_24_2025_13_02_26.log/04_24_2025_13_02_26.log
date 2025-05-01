@@ -1,0 +1,15 @@
+[ 2025-04-24 13:02:28,148 ] 29 root - INFO - Entered the data ingestion method or component
+[ 2025-04-24 13:02:28,170 ] 33 root - INFO - Read the dataset as dataframe
+[ 2025-04-24 13:02:28,197 ] 39 root - INFO - Train test split initiated
+[ 2025-04-24 13:02:28,216 ] 46 root - INFO - Ingestion of the data iss completed
+[ 2025-04-24 13:02:28,256 ] 78 root - INFO - Read train and test data completed
+[ 2025-04-24 13:02:28,256 ] 80 root - INFO - Obtaining preprocessing object
+[ 2025-04-24 13:02:28,256 ] 54 root - INFO - Categorical columns: ['Geography', 'Gender']
+[ 2025-04-24 13:02:28,256 ] 55 root - INFO - Numerical columns: ['CreditScore', 'Age', 'Tenure', 'Balance', 'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary']
+[ 2025-04-24 13:02:28,259 ] 86 root - INFO - Train columns: Index(['CreditScore', 'Geography', 'Gender', 'Age', 'Tenure', 'Balance',
+       'NumOfProducts', 'HasCrCard', 'IsActiveMember', 'EstimatedSalary',
+       'Exited'],
+      dtype='object')
+[ 2025-04-24 13:02:28,259 ] 97 root - INFO - Applying preprocessing object on training dataframe and testing dataframe.
+[ 2025-04-24 13:02:28,276 ] 109 root - INFO - Saved preprocessing object.
+[ 2025-04-24 13:02:28,282 ] 41 root - INFO - Split training and test input data
